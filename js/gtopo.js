@@ -1,15 +1,15 @@
 $(function(){
-    var canvas = document.getElementById("myCanvas");
-    if (canvas.getContext) {
-        var ctx = canvas.getContext("2d");
 
-        ctx.fillStyle = "rgb(200,0,0)";
-        ctx.fillRect (10, 10, 55, 50);
-
-        ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
-        ctx.fillRect (30, 30, 55, 50);
-    }
 })
+
+$(window).resize(function () { //浏览器窗口大小改变时触发
+    height = $(window).height(); //浏览器高度
+    width = $(window).width();  //宽度
+    var canvas = $("myCanvas"); //获取画布
+    canvas.height = height;
+    canvas.width = width;
+    alert(canvas.height)
+});
 
 $(function () { //初始画布大小为浏览器窗口大小
     var canvas = $("myCanvas");
