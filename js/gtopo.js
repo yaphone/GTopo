@@ -25,7 +25,7 @@ $(function(){
     }
 })
 
-$(window).resize(function () { //浏览器窗口大小改变时触发
+$(window).resize(function () { //浏览器窗口大小改变时触发，重新绘制
     height = $(window).height(); //浏览器高度
     width = $(window).width();  //宽度
     var canvas = $("#myCanvas")[0]; //获取画布
