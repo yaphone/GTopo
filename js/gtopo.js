@@ -31,4 +31,5 @@ $(window).resize(function () { //浏览器窗口大小改变时触发，重新�
     var canvas = $("#myCanvas")[0]; //获取画布
     canvas.height = height;
     canvas.width = width;
+	alert("OK");
 });
